@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "core-js": "^3.30.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "name": "practice-area",
+  "version": "1.0.0",
+  "default":"template.html",
+ 
+  "scripts": {
+   "start":"parcel template.html",
+   "build":"parcel build template.html"
+  },
+  "author": "adam",
+  "license": "ISC",
+  "description": ""
+}
