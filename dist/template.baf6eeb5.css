@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  z-index: 3;
+  background-color: #ffe17fc7;
+  font-family: cursive;
+  position: fixed;
+  box-shadow: 0 5px 8px #000000ad;
+}
+
+nav {
+  margin-left: 20px;
+  padding: 13px;
+}
+
+a {
+  color: #180b0b;
+}
+
+header nav a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.topic-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 38px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+main {
+  width: 100%;
+  float: left;
+  background-color: #00f;
+}
+
+.container {
+  width: 100%;
+  float: left;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.contain-box1 {
+  width: 100%;
+  float: left;
+}
+
+.contain-box1 .box {
+  width: 24.1%;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px;
+}
+
+.none {
+  margin-right: 15px;
+}
+
+.contain-box2 {
+  width: 100%;
+  float: left;
+}
+
+.contain-box2 .box {
+  width: 24.1%;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 50px 90px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 599px;
+}
+
+@media only screen and (width <= 590px) {
+  header, main, .banner, .container, .contain-box1, .contain-box2 {
+    width: 100%;
+  }
+
+  .contain-box1 .box {
+    width: 100%;
+    margin-top: 9px;
+    padding: 20px;
+  }
+
+  .banner .img {
+    height: 400px;
+  }
+
+  .contain-box2 .box {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+
+  .contain-box2 img, .contain-box1 img {
+    width: 100%;
+    height: 270px;
+    z-index: 1;
+    box-shadow: 5px 2px 10px #000;
+  }
+
+  .content {
+    width: 85px;
+    z-index: 2;
+    background-color: #8b7676;
+    padding: 5px;
+    position: absolute;
+  }
+
+  .us {
+    width: 100%;
+  }
+
+  .first-about, .second-about, .third-about, .fourth-about {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (width >= 590px) {
+  header, main, .banner, .container, .contain-box1, .contain-box2 {
+    width: 100%;
+  }
+
+  .contain-box1 .box {
+    width: 46.8%;
+    margin-top: 9px;
+    padding: 20px;
+  }
+
+  .contain-box2 .box {
+    width: 46.8%;
+    margin-top: 8px;
+    padding: 20px;
+  }
+
+  .contain-box2 img, .contain-box1 img {
+    width: 100%;
+    height: 270px;
+    z-index: 1;
+    box-shadow: 5px 2px 10px #000;
+  }
+
+  .content {
+    width: 85px;
+    z-index: 2;
+    background-color: #8b7676;
+    padding: 5px;
+    position: absolute;
+  }
+
+  .us {
+    width: 49.2%;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .first-about, .third-about {
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (width >= 778px) {
+  header, main, .banner, .container, .contain-box1, .contain-box2 {
+    width: 100%;
+  }
+
+  .contain-box1 .box, .contain-box2 .box {
+    width: 47%;
+    margin-top: 9px;
+    padding: 20px;
+  }
+
+  .contain-box2 img, .contain-box1 img {
+    height: 270px;
+    z-index: 1;
+    box-shadow: 5px 2px 10px #000;
+  }
+
+  .content {
+    width: 85px;
+    z-index: 2;
+    background-color: #8b7676;
+    padding: 5px;
+    position: absolute;
+  }
+
+  .us {
+    width: 49.3%;
+    margin-top: 10px;
+  }
+
+  .first-about, .third-about {
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (width >= 992px) {
+  header, main, .banner, .container, .contain-box1, .contain-box2 {
+    width: 100%;
+  }
+
+  .contain-box1 .box {
+    width: 24.1%;
+    margin-top: 9px;
+    margin-right: 7px;
+    padding: 20px;
+  }
+
+  .contain-box2 .box {
+    width: 24%;
+    margin-top: 9px;
+    margin-right: 7px;
+    padding: 20px;
+  }
+
+  .contain-box2 img, .contain-box1 img {
+    height: 200px;
+    z-index: 1;
+    box-shadow: 5px 2px 10px #000;
+  }
+
+  .content {
+    width: 85px;
+    z-index: 2;
+    background-color: #8b7676;
+    padding: 5px;
+    position: absolute;
+  }
+
+  .us {
+    width: 24.3%;
+  }
+
+  .first-about, .second-about, .third-about {
+    margin-right: 8px;
+  }
+}
+
+.content:hover {
+  background-color: #f1f1f1;
+}
+
+.about {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.first, .second {
+  width: 100%;
+  float: left;
+}
+
+.about .second .first-about img, .about .second .second-about img, .about .second .third-about img, .about .second .fourth-about img {
+  width: 100%;
+  height: 270px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.img-content {
+  width: 100%;
+  background-color: #fff;
+}
+
+.img-content p {
+  color: #3d3131c5;
+  font-size: 20px;
+}
+
+.img-content h1 {
+  color: #000000c5;
+  font-size: 23px;
+}
+
+.contact {
+  text-align: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  padding: 9px;
+  font-size: 17px;
+}
+
+.contact:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+.contact p:hover {
+  color: #fff;
+}
+
+.list {
+  width: 30%;
+  height: 50%;
+  z-index: 2;
+  z-index: 5;
+  background-color: #ff7f509a;
+  display: none;
+  position: fixed;
+  top: 72px;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  text-align: right;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.menu {
+  color: #160c0c;
+  width: 20px;
+  position: relative;
+  top: 23px;
+  right: 20px;
+}
+
+li {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: #fdebebbb;
+  margin-top: 5px;
+}
+
+li:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ope {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.form {
+  width: 100%;
+  height: 800px;
+  float: left;
+  background-color: #fff;
+  padding: 70px;
+}
+
+.head {
+  text-shadow: 5px 5px 10px #0000009f;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.input:hover, textarea:hover {
+  background-color: #f1f1f1;
+}
+
+.input {
+  width: 100%;
+  height: 55px;
+  border: 10px solid #fff;
+  border-radius: 20%;
+  margin-top: 10px;
+  font-size: 21px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border: 10px solid #fff;
+  border-radius: 7%;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.address {
+  text-shadow: 5px 5px 10px #0000009f;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  text-shadow: 5px 5px 10px #0000009f;
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.btn:hover {
+  color: red;
+}
+
+.real-form {
+  float: left;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+@media only screen and (width <= 1200px) {
+  .form {
+    padding: 15px;
+  }
+}
+
+.login {
+  color: orange;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.talk {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.remover1 {
+  display: block;
+}
+
+.gDev {
+  height: 800px;
+  width: 100%;
+  background-color: #00f;
+  display: none;
+}
+
+.l {
+  float: left;
+  width: 80%;
+  text-align: center;
+  background-color: red;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.x {
+  text-align: center;
+  cursor: pointer;
+  background-color: green;
+  padding: 4px;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.jomO {
+  float: left;
+  width: 50%;
+  height: 250px;
+  background-color: #0ff;
+}
+
+.jomT {
+  float: left;
+  width: 50%;
+  height: 250px;
+  background-color: #ff00bf;
+}
+
+.mode {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  position: relative;
+  left: 850px;
+}
+
+.move {
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+}
+
+.move:hover {
+  height: 100px;
+  width: 0;
+  background-color: red;
+  transition: height 2s, width .5s;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.animation {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 10%;
+  padding: 5px;
+  animation-name: small;
+  animation-duration: 4s;
+  animation-iteration-count: 6;
+  position: relative;
+  right: 0;
+}
+
+@keyframes small {
+  0% {
+    background-color: #ff0;
+    right: 20px;
+  }
+
+  10% {
+    background-color: red;
+    right: 530px;
+  }
+}
+
+/*# sourceMappingURL=template.baf6eeb5.css.map */
